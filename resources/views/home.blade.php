@@ -6,7 +6,6 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
-
                 <div class="panel-body">
                     @if (session('status'))
                         <div class="alert alert-success">
@@ -14,7 +13,6 @@
                         </div>
                     @endif
                       Bienvenido a freeemarket
-                    <img src="https://loremflickr.com/220/140" alt="">
                 </div>
             </div>
         </div>
