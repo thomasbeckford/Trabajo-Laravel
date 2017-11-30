@@ -1,6 +1,6 @@
-# Proyecto Integrador Grupal basado en Laravel
+# Trabajo Laravel
 
-Desarrollo de Curso Full Stack Web Digital House Argentina.
+Desarrollo de Curso Full Stack Web *Digital House Argentina*.
 
 ## Getting Started
 ```
@@ -19,13 +19,13 @@ LARAVEL
 
 Steps
 ```
-Git Clone
-Iniciar MySql
-Crear .env y configurarlo
-php artisan migrate
-php artisan serve
+GIT CLONE
+INICIAR MYSQL
+CREAR .ENV Y CONFIGURARLO
+PHP ARTISAN MIGRATE
+PHP ARTISAN SERVE
 ```
-Ya tenemos nuestra pagina funcionando, ahora debemos abrir un navegador y pegar esto:
+Ya tenemos nuestra pagina funcionando, nuestra base migrada, ahora debemos abrir un navegador y pegar esto:
 
 ```
 http://localhost:8000/
