@@ -1,6 +1,6 @@
 # Trabajo Laravel
 
-Desarrollo de Curso Full Stack Web *Digital House Argentina*.
+Desarrollo de Curso Full Stack Web **Digital House Argentina**.
 
 ## Getting Started
 ```
