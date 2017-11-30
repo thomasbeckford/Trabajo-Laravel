@@ -1,0 +1,80 @@
+.subtitle{
+  font-size: 20px;
+  margin-bottom: 50px;
+
+}
+
+form {
+  display: inline;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 84px;
+    font-weight: 100;
+      margin-top: 40px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.mybtn button {
+  height: 80px;
+  width: 320px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+.content{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
+input {
+border-radius: 3px;
+margin:0;
+border:0;
+padding:0;
+height: 40px;
+width: 400px;
+border: 1px solid #b9b9b9;
+}
+
+input[type=text] {
+width: 60%;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+}
