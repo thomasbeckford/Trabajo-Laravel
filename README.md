@@ -1,21 +1,20 @@
 # Proyecto Integrador Laravel
 
-### Requerimientos
+## Requerimientos
 
-Localhost
-MySql
-Composer
-Laravel
+### Localhost
+### MySql
+### Composer
+### Laravel
 
-### Ejecutar Proyecto
+## Ejecutar Proyecto
 
-Git Clone
-Iniciar MySql
-Crear .env y configurarlo
-php artisan migrate
-php artisan serve
+### Git Clone
+### Iniciar MySql
+### Crear .env y configurarlo
+### php artisan migrate
+### php artisan serve
 
-¨¨¨¨
-Abrir >>
+```
 ## http://localhost:8000
-¨¨¨¨
+```
