@@ -22,3 +22,9 @@ Route::get('/ventas', 'VentasController@getProd')->name('home');
 
 Route::get('/compus', 'CompusController@getCompus');
 Route::get('/telefonos', 'TelefonosController@getTelefonos');
+
+Route::get("/agregarProducto", function (){
+  return view('/agregarProducto');
+});
+Route::post("/agregarProducto", "ProductsController@guardar");
+Route::get("/borrarProducto/{id}", "ProductsController@borrar");
