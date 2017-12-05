@@ -12,6 +12,26 @@ use App\Quotation;
 
 class ProductsController extends Controller
 {
+
+  public function __construct()
+  {
+      $this->middleware('auth');
+  }
+
+
+public function modificarProd(Request $r, $id){
+
+  $producto = Product::find($id);
+  $producto->producto = $r->input("producto");
+  $producto->precio = $r->input("precio");
+  $producto->category = $r->input("category");
+  $producto->descripcion = $r->input("descripcion");
+  $producto->save();
+
+  return redirect("/");
+
+}
+
   public function guardar(Request $r) {
 
     $reglas = [
@@ -38,7 +58,12 @@ class ProductsController extends Controller
     $producto->descripcion = $r->input("descripcion");
     $producto->user_id = $r->input("user_id");
 
-    Product::create($r->all());
+    $foto = $r->file("poster");
+    $nombreArchivo = $foto->storePublicly("public/posters");
+    $producto->imagen = $nombreArchivo;
+
+    $producto->save();
+
     return redirect("/");
 }
 
@@ -60,13 +85,20 @@ class ProductsController extends Controller
   }
 
   public function misProductos(){
-      $id_user = Auth::user()->id;
-      $productos = DB::table('products')
-                ->join('users', 'users.id', '=', 'products.user_id')
-                ->select('products.*')->where('products.user_id', $id_user)
-                ->get();
+
+          $id_user = Auth::user()->id;
+          $productos = Product::join('users', 'users.id', '=', 'products.user_id')
+          ->select('products.*')->where('products.user_id', $id_user)
+          ->get();
     return view("productos", compact("productos"));
   }
+
+
+public function modificar($id){
+  $producto = Product::find($id);
+    return view ("modificar", compact("producto"));
+}
+
 
   public function getProd(){
     return view("agregarProducto");

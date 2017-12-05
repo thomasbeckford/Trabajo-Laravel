@@ -11,4 +11,9 @@ class Product extends Model
     public function usuarios(){
       return $this->belongsTo('App\User', 'user_id');
     }
+
+    public function getPoster() {
+      return str_replace("public", "/storage", $this->imagen);
+    }
+
 }
