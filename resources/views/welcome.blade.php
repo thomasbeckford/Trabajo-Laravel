@@ -34,14 +34,11 @@
                     <h1>Freemarket</h1>
                 </div>
                   <div class="subtitle">
-                    <p>¿Que buscas?</p>
+                    <p>Computadoras y Celulares</p>
                   </div>
-                  <div class="mybtn">
-                    <form action="/compus">
-                      <button type="submit" name="buscarCompus">Computadoras</button>
-                    </form>
-                    <form action="/telefonos">
-                      <button type="submit" name="buscarTelefonos">Telefonos Celulares</button>
+                    <div class="mybtn">
+                      <form action="/productos">
+                        <input type="submit" value="Ver productos en venta" />
                     </form>
                   </div>
             </div>

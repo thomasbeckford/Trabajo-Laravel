@@ -37,7 +37,7 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp; 
+                        &nbsp;
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -48,7 +48,10 @@
                             <li><a href="{{ route('register') }}">Register</a></li>
                         @else
                             <li>
-                                <a href="ventas">Ventas</a>
+                                <a href="/productos">Comprar</a>
+                            </li>
+                            <li>
+                                <a href="/agregarProducto">Vender</a>
                             </li>
                               <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
@@ -56,6 +59,11 @@
                                 </a>
 
                                 <ul class="dropdown-menu">
+                                  <li>
+                                    <a href="/misProductos">
+                                      Mis productos
+                                    </a>
+                                  </li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
@@ -67,6 +75,7 @@
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
+
                                 </ul>
                             </li>
                         @endguest

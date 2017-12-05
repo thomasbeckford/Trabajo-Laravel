@@ -5,14 +5,14 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading">El primer sitio para comprar y vender en todo el mundo!</div>
                 <div class="panel-body">
                     @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
                         </div>
                     @endif
-                      Bienvenido a freeemarket
+                      <p>Bienvenido, que hacemos?</p>
                 </div>
             </div>
         </div>
