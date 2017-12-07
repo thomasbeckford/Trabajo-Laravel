@@ -5,3 +5,7 @@ ul { list-style: none}
 .title-top {
   margin-top: 40px;
 }
+
+body {
+  background-image: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/bright_squares.png')
+}
