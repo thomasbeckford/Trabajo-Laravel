@@ -22,12 +22,12 @@ LARAVEL
 
 Steps
 ```
-COMPOSER UPDATE
+composer update
 CREAR FILE .ENV Y NUESTRA BASE DE DATOS ( CONFIGURAR SCHEMA, NAME, PASSWORD )
-PHP ARTISAN KEY:GENERATE
-CREAR LA TABLA EN LA BASE DE DATOS
-PHP ARTISAN MIGRATE
-PHP ARTISAN DB:SEED
+php artisan key:generate
+php artisan migrate
+php artisan db:seed
+php artisan serve
 
 ```
 Ya tenemos nuestra pagina funcionando, nuestra base migrada y nuestros registros cargados, ahora debemos abrir un navegador y pegar esto:
