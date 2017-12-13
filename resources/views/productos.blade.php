@@ -41,6 +41,7 @@
                                 <h5>${{$producto->precio}}</h5>
                             </div>
                       </li>
+                      <hr>
                     @endforeach
                   @else
                     <p>No hay productos</p>
